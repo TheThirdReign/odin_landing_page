@@ -56,20 +56,26 @@ a {
     margin-bottom: 100px;
     align-items: center;
     gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flower {
+    max-height: 100%;
+    min-width: 100%;
+}
+
+ .awesome {
+    max-width: 500px;
+} 
+
+ .image-1 {
+    flex-shrink: 1;
     height: 300px;
     width: 500px;
-}
-
-.awesome {
-    margin-left: 200px;
-}
-
-.image-1 {
-    margin-right: 200px;
-}
+    display: flex;
+    flex-wrap: wrap;
+} 
 
 .text1 {
     font-size: 48px;
@@ -107,8 +113,51 @@ a {
 
 .cards {
     display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    flex-wrap: wrap;
 }
 
+.text {
+  text-align: center;
+  color: #1f2937;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+.section-3 {
+  background-color: #e5e7eb;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-family: "Roboto";
+  color: #1f2937;
+  font-weight: 300;
+}
+
+.quote-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.author {
+  align-self: flex-end;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+/* .section-1, .header, .welcome {
+  flex-wrap: wrap;
+} */
 /* Font */
 
 .roboto-thin {
