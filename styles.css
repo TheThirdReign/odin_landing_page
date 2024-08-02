@@ -8,7 +8,8 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     margin-top: 10px;
 }
@@ -32,15 +33,11 @@ a {
     border-radius: 10px;
     width: 50px;
     height: 50px;
-    margin-left: 200px;
-}
-
-.links {
-    margin-right: 200px;
 }
 
 .links-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -61,8 +58,9 @@ a {
 }
 
 .flower {
-    max-height: 100%;
-    min-width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
  .awesome {
@@ -73,7 +71,6 @@ a {
     flex-shrink: 1;
     height: 300px;
     width: 500px;
-    display: flex;
     flex-wrap: wrap;
 } 
 
@@ -129,6 +126,8 @@ a {
 
 .section-3 {
   background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
 }
 
 .quote {
@@ -142,10 +141,9 @@ a {
 .quote-wrap {
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
-  margin-right: 300px;
   padding-top: 100px;
   padding-bottom: 100px;
+  max-width: 800px;
 }
 
 .author {
@@ -153,6 +151,17 @@ a {
   font-family: "Roboto";
   font-weight: 600;
   font-size: 24px;
+}
+
+.info {
+  height: 200px;
+  width: 200px;
+}
+
+.info>img {
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 /* .section-1, .header, .welcome {
