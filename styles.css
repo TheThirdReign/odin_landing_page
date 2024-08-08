@@ -225,6 +225,16 @@ a {
   justify-content: center;
 }
 
+.footer {
+  color: #e5e7eb;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+
+
 /* For Font */
 
 .roboto-thin {
